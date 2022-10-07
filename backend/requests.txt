@@ -1,0 +1,32 @@
+#OBTIENE LISTA DE EMPLEADOS
+GET http://localhost:5000/empleados
+
+
+#OBTIENE UN EMPLEADO POR ID
+GET http://localhost:5000/empleados/1
+
+
+#CREA UN NUEVO EMPLEADO
+POST http://localhost:5000/empleados
+Content-Type: application/json
+
+{
+    "nombreEmpleado": "lola",
+    "rolEmpleado": "chofer",
+    "tipoEmpleado": "interno"
+}
+
+
+#ELIMINA UN EMPLEADO POR ID
+DELETE http://localhost:5000/empleados/2
+
+
+#ACTUALIZA UN EMPLEADO POR ID
+http://localhost:5000/empleados/3
+Content-Type: application/json
+
+{
+    "nombreEmpleado": "lolaaaaa",
+    "rolEmpleado": "cargadores",
+    "tipoEmpleado": "externo"
+}
